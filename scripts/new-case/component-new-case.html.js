@@ -7,20 +7,16 @@ export default function html(){
             <!--  character set of your HTML page.                                        -->
             <!--  ----------------------------------------------------------------------  -->
 
-            <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-            <script src="https://www.google.com/recaptcha/api.js"></script>
-            <script>
-                function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-            </script>
-
+            <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">            
             <!--  ----------------------------------------------------------------------  -->
             <!--  NOTE: Please add the following <FORM> element to your page.             -->
             <!--  ----------------------------------------------------------------------  -->
 
+            
             <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
-                <input type=hidden name='captcha_settings' value='{"keyname":"Web_To_Case_Captcha","fallback":"true","orgId":"00D1r000002dpG5","ts":""}'>
-                <input type=hidden name="orgid" value="00D1r000002dpG5">
-                <input type=hidden name="retURL" value="https://www.3bforms.com/contactus-success">
+
+            <input type=hidden name="orgid" value="00D1r000002dpG5">
+            <input type=hidden name="retURL" value="https://www.3bforms.com/contactus-success">
 
                 <!--  ----------------------------------------------------------------------  -->
                 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -61,8 +57,6 @@ export default function html(){
                         </div>
                     </div>
                 </div>
-                
-                <div class="g-recaptcha" data-sitekey="6LcnZFMaAAAAAGS8p4XpG4JIAxAHkLL205A22XIl"></div><br>
                 <input type="submit" name="submit" class="slds-button slds-button_brand">
             </form>
         </div>
