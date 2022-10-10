@@ -18,7 +18,7 @@ export default class ComponentProductsCompare extends HTMLElement {
         {name: 'Titan', link:'https://formtitan.com/', native:'No', price:'$$$$', pdfSupport: 'Yes'}
     ];
 
-    docsProduct = {
+    ourProduct = {
         name: '3B Forms', link:'https://www.3bforms.com/', native:'Yes', price:'FREE', pdfSupport: 'Partial'
     }
 
