@@ -4,7 +4,7 @@ export default function html(){
             <!-- Alert -->
             <div class="slds-text-align_center slds-size_full slds-text-body_regular">
                 <div class="slds-notify_alert system-message level-info slds-theme_info">
-                    <span>This app is in Beta</span>
+                    <span>A new fully re-designed version is soon coming.</span>
                 </div>
             </div>
             <div class="slds-p-top_x-small">
@@ -19,7 +19,7 @@ export default function html(){
                     <div class="slds-context-bar__primary">
                         <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
                         <span class="slds-context-bar__label-action slds-context-bar__app-name">
-                            <span class="slds-truncate" title="3B Docs">Documents</span>
+                            <span class="slds-truncate" title="3B Forms">Forms</span>
                         </span>
                         </div>
                     </div>

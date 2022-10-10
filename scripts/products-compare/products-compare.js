@@ -5,27 +5,21 @@ export default class ComponentProductsCompare extends HTMLElement {
     template;
 
     features = [
-        {name:'Native', title: 'Title', property:'native'},
-        {name:'Multiple Signers', title: 'Supports multiple signing parties', property:'multiSign'},
-        {name:'Contract Redlining', title: 'Supports contract redlining and negotiations', property:'redlining'},
-        {name:'Batch Support', title: 'Batch/Asynchronous document generation support', property:'batch'},
-        {name:'Sub Templates', title: 'Allow creating reusable templates', property:'templates'},
-        {name:'Input Formats', title: 'What inputs are supported?', property:'inputs'},
-        {name:'Output Formats', title: 'What output are supported?', property:'outputs'},
-        {name:'Price', title: 'Licenses and ongoing cost', property:'price'},
+        {name:'Native', title: 'Is it a native application?', property:'native'},
+        // {name:'PDF Support', title: 'Does the app support PDF generation?', property:'pdfSupport'},
+        {name:'Price', title: 'Cost', property:'price'},
     ];
 
     products = [
-        {name: 'DocuSign', link:'https://www.docusign.com/', native:'No', multiSign:'Yes', redlining:'Yes', batch:'Yes', price:'$$$$$', templates:'No', inputs:'PDF, DOCX, others', outputs:'PDF, DOCX, others'},
-        {name: 'Conga', link:'https://conga.com/', native:'No', multiSign:'Yes', redlining:'Yes', batch:'Yes', price:'$$$$', templates:'No', inputs:'PDF, DOCX, others', outputs:'PDF, DOCX, others'},
-        {name: 'Docomotion', link:'https://www.docomotion.com/', native:'No', multiSign:'No', redlining:'No', batch:'Yes', price:'$$$', templates:'No', inputs:'PDF, DOCX, others', outputs:'PDF, DOCX, others'},
-        {name: 'Nintex', link:'https://www.nintex.com/', native:'No', multiSign:'Yes', redlining:'No', batch:'Yes', price:'$$$$', templates:'No', inputs:'PDF, DOCX, others', outputs:'PDF, DOCX, others'},
-        {name: 'S-Docs', link:'https://www.sdocs.com/', native:'Yes', multiSign:'Yes', redlining:'Yes', batch:'Yes', price:'$$$', templates:'Yes', inputs:'HTML, PDF, DOCX, others', outputs:'PDF, DOCX, others'},
-        {name: 'Titan', link:'https://formtitan.com/', native:'No', multiSign:'Yes', redlining:'No', batch:'Yes', price:'$$$', templates:'No', inputs:'HTML, PDF, DOCX, others', outputs:'PDF, DOCX, others'}
+        {name: '123FormBuilder', link:'https://www.123formbuilder.com/', native:'No', price:'$$', pdfSupport: 'Yes'},
+        {name: 'Youreka', link:'https://youreka.io/', native:'No', price:'$$', pdfSupport: 'Yes'},
+        {name: 'Formassembly', link:'https://www.formassembly.com/', native:'No', price:'$$$', pdfSupport: 'Yes'},
+        {name: 'Formstack', link:'https://www.formstack.com/', native:'No', price:'$$$', pdfSupport: 'Yes'},
+        {name: 'Titan', link:'https://formtitan.com/', native:'No', price:'$$$$', pdfSupport: 'Yes'}
     ];
 
     docsProduct = {
-        name: '3B Docs', link:'https://www.3bdocs.com/', native:'Yes', multiSign:'Yes', redlining:'Yes', batch:'No', price:'FREE', templates:'Yes', inputs:'Only HTML', outputs:'HTML, PDF, DOCX, others'
+        name: '3B Forms', link:'https://www.3bforms.com/', native:'Yes', price:'FREE', pdfSupport: 'Partial'
     }
 
     constructor() {

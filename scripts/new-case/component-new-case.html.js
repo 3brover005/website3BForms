@@ -18,9 +18,9 @@ export default function html(){
             <!--  ----------------------------------------------------------------------  -->
 
             <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
-                <input type=hidden name='captcha_settings' value='{"keyname":"X3BDocs","fallback":"true","orgId":"00D1r000002dpG5","ts":""}'>
+                <input type=hidden name='captcha_settings' value='{"keyname":"Web_To_Case_Captcha","fallback":"true","orgId":"00D1r000002dpG5","ts":""}'>
                 <input type=hidden name="orgid" value="00D1r000002dpG5">
-                <input type=hidden name="retURL" value="https://www.3bdocs.com/contactus-success">
+                <input type=hidden name="retURL" value="https://www.3bforms.com/contactus-success">
 
                 <!--  ----------------------------------------------------------------------  -->
                 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -62,7 +62,7 @@ export default function html(){
                     </div>
                 </div>
                 
-                <div class="g-recaptcha" data-sitekey="6LcilDYiAAAAAJsiuE3oEpzbdn1rmmWUS5kAeUV6"></div><br>
+                <div class="g-recaptcha" data-sitekey="6LcnZFMaAAAAAGS8p4XpG4JIAxAHkLL205A22XIl"></div><br>
                 <input type="submit" name="submit" class="slds-button slds-button_brand">
             </form>
         </div>
