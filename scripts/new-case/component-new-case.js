@@ -40,16 +40,17 @@ export default class ComponentNewCase extends HTMLElement {
      */ 
     render(){
         let templateElement = this.getTemplateElement();
-
-        /* do not attach to shadow root */
-        // if(this.template){
-        //     this.template.innerHTML = '';
-        // }else{
-        //     this.template = this.attachShadow({mode: 'closed'});
-        // }
-        // this.template.appendChild(templateElement.content.cloneNode(true));
-        /* do not attach to shadow root */
         this.innerHTML = templateElement.innerHTML;
+        this.renderedCallback();
+    }
+
+    renderedCallback(){
+        hbspt.forms.create({
+            region: "eu1",
+            portalId: "143372710",
+            formId: "737d4964-5414-407b-beeb-0c83a9aba5b2",
+            target: '.hubspot-case'
+        });
     }
 
     /**
