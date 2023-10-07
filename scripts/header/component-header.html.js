@@ -4,7 +4,7 @@ export default function html(){
             <!-- Alert -->
             <div class="slds-text-align_center slds-size_full slds-text-body_regular">
                 <div class="slds-notify_alert system-message level-info slds-theme_info">
-                    <span>A new fully re-designed version is soon coming.</span>
+                    <span>3B Forms v4 is now out!</span>
                 </div>
             </div>
             <div class="slds-p-top_x-small">

@@ -9,6 +9,7 @@ export default function css(){
             max-width: 1200px;
             margin: auto;
             margin-top: 20px;
+            padding: 1.5rem;
         }
 
         .code {
@@ -17,7 +18,7 @@ export default function css(){
             box-shadow: 0 0 5px hsl(0deg 0% 0% / 10%);
         }
 
-        @media screen and (min-width: 1201px) {
+       /* @media screen and (min-width: 1201px) {
             .code{
                 padding: 50px;
             }
@@ -45,6 +46,6 @@ export default function css(){
             .code{
                 padding: 20px;
             }
-        }
+        }*/
     `;
 }

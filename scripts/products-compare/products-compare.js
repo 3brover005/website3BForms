@@ -6,20 +6,22 @@ export default class ComponentProductsCompare extends HTMLElement {
 
     features = [
         {name:'Native', title: 'Is it a native application?', property:'native'},
-        // {name:'PDF Support', title: 'Does the app support PDF generation?', property:'pdfSupport'},
+        {name:'PDF Support', title: 'Does the app support PDF generation?', property:'pdfSupport'},
+        {name:'Dependent Picklists', title: 'Support for Salesforce Dependent Picklists?', property:'dependentPicklists'},
+        {name:'Offline Support', title: 'Support for offline submissions?', property:'offline'},
+        {name:'Sandbox Support', title: 'Can you build forms in a sandbox?', property:'sandbox'},
+        {name:'Digital Experiences', title: 'Can you publish forms to a digital experience?', property:'digitalExp'},
         {name:'Price', title: 'Cost', property:'price'},
     ];
 
     products = [
-        {name: '123FormBuilder', link:'https://www.123formbuilder.com/', native:'No', price:'$$', pdfSupport: 'Yes'},
-        {name: 'Youreka', link:'https://youreka.io/', native:'No', price:'$$', pdfSupport: 'Yes'},
-        {name: 'Formassembly', link:'https://www.formassembly.com/', native:'No', price:'$$$', pdfSupport: 'Yes'},
-        {name: 'Formstack', link:'https://www.formstack.com/', native:'No', price:'$$$', pdfSupport: 'Yes'},
-        {name: 'Titan', link:'https://formtitan.com/', native:'No', price:'$$$$', pdfSupport: 'Yes'}
+        {name: '123FormBuilder', link:'https://www.123formbuilder.com/', native:'No', price:'$$', pdfSupport: 'Yes', dependentPicklists:'Yes', offline: 'No', sandbox: 'Partial', digitalExp: 'Non-Native'},
+        {name: 'FormAssembly', link:'https://www.formassembly.com/', native:'No', price:'$$$', pdfSupport: 'Yes', dependentPicklists:'Yes', offline: 'No', sandbox: 'Partial', digitalExp: 'Non-Native'},
+        {name: 'FormStack', link:'https://www.formstack.com/', native:'No', price:'$$$', pdfSupport: 'Yes', dependentPicklists:'Yes', offline: 'No', sandbox: 'Partial', digitalExp: 'Non-Native'},
     ];
 
     ourProduct = {
-        name: '3B Forms', link:'https://www.3bforms.com/', native:'Yes', price:'FREE', pdfSupport: 'Partial'
+        name: '3B Forms', link:'https://www.3bforms.com/', native:'Yes', price:'FREE', pdfSupport: 'Yes', dependentPicklists:'Yes', offline: 'Yes', sandbox: 'Partial', digitalExp: 'Native'
     }
 
     constructor() {
