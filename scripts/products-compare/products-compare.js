@@ -21,7 +21,7 @@ export default class ComponentProductsCompare extends HTMLElement {
     ];
 
     ourProduct = {
-        name: '3B Forms', link:'https://www.3bforms.com/', native:'Yes', price:'FREE', pdfSupport: 'Yes', dependentPicklists:'Yes', offline: 'Yes', sandbox: 'Partial', digitalExp: 'Native'
+        name: '3B Forms', link:'https://www.3bforms.com/', native:'Yes', price:'FREE', pdfSupport: 'Yes', dependentPicklists:'Yes', offline: 'Yes', sandbox: 'Full', digitalExp: 'Native'
     }
 
     constructor() {
